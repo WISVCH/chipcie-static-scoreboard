@@ -1,6 +1,6 @@
 FROM nginx:1.27.1-alpine
 
-RUN mkdir -p /data/nginx/cache
+RUN mkdir -p /var/nginx/cache
 
 WORKDIR /usr/share/nginx/html
 COPY ./nginx.conf /etc/nginx/templates/nginx.conf.template
